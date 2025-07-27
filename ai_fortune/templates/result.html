@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>你的运势结果</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: #f8f5fe;
+            padding: 20px;
+        }
+        .result-card {
+            background: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .lucky-num {
+            font-size: 24px;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        .share-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-card">
+        <h2 style="color: #8a2be2;">{{ fortune.name }}的今日运势</h2>
+        
+        <h3>❤️ 爱情运势</h3>
+        <p>{{ fortune.love }}</p>
+        
+        <h3>💼 事业运势</h3>
+        <p>{{ fortune.career }}</p>
+        
+        <h3>🌱 健康建议</h3>
+        <p>{{ fortune.health }}</p>
+        
+        <div style="margin: 25px 0;">
+            <p>✨ 幸运数字：<span class="lucky-num">{{ fortune.lucky_num }}</span></p>
+        </div>
+        
+        <a href="/" class="share-btn">再测一次</a>
+<!-- 谷歌广告 -->
+<div style="margin:20px 0; padding:15px; background:#fff8e8;">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-你的ID"
+   crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-你的ID"
+       data-ad-slot="你的广告位"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+    </div>
+</body>
+</html>
